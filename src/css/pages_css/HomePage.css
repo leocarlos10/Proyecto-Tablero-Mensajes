@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0 5rem 3rem 5rem;
+    
+}
+.cont-pri{
+    padding: 0 12rem 0 12rem;
+}
+
+.cont-mensaje{
+    margin-bottom: 1rem;
+    height: 60vh;
+    overflow: scroll;
+}
+
+/* este codigo de aqui es para quitar el estilo
+por defecto de el overflow: scroll */
+.cont-mensaje::-webkit-scrollbar{
+    display: none;
+}
+
+.exampleMesague{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #858796;
+    border-radius: 8px;
+}
+
+.contenido{
+    margin-left: 1rem;
+    padding: 0;
+    flex: 1;
+}
+
+.cuenta,
+.descripcion{
+    margin: 0;
+}
+
+.cont-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+    flex: 1;
+}
+
+.cont-edit,
+.cont-eliminar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #858796;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.cont-edit:hover,
+.cont-eliminar:hover{
+    background-color: #d7d8db;
+}
+
+.cont-envio-mensaje{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5rem;;
+}
+
+#mensaje{
+    padding: 4px;
+    border-radius: 8px;
+    outline: none;
+    white-space: pre-wrap;  /* Mantiene saltos de línea */
+    word-wrap: break-word;  /* Rompe palabras largas */
+    flex: 1;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* utilizamos el webkit-scrollbar para quitarle el estilo 
+    de la barra de scroll al text area.
+*/
+#mensaje::-webkit-scrollbar{
+    display: none;
+}
+
+#btn-enviar{
+    height: 24px;
+    width: 32px;
+    margin-left: 2px;
+    border-radius: 8px;
+    border: 1px solid #858796;
+    outline: none ;
+    cursor: pointer;
+}
+
+#btn-enviar:hover{
+    background-color: #d7d8db;
+}
+
+
+
+
+
+
